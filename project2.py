@@ -2,7 +2,7 @@
 with open("story.txt", "r") as f:
     story = f.read()
 
-# print(story)
+
     
 words = set()
 start_of_word = -1
@@ -20,8 +20,6 @@ for i, char in enumerate(story):
         start_of_word = -1
 
 answers = {}
-# answers = {"<name>": "Glow"}
-# answers["key"] = "value"
 
 for word in words:
     answer = input("Enter a word" + word + ":")
